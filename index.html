@@ -5,25 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+      .card{
+        width: 18rem;
+      }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand">Weather Dashboard</a>
         <form class="form-inline">
-          <input class="form-control mr-sm-4" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-danger" type="submit">Search</button>
+          <input id="searchInput" value="" class="form-control mr-sm-4" type="search" placeholder="Search" aria-label="Search">
+          <button id="searchBtn" class="btn btn-outline-danger" type="submit">Search</button>
         </form>
       </nav>
 
       <div class="jumbotron text-center">
-        <h1 class="display-4">City Name</h1>
-       <h4>Temperature</h4>
-       <h4>Humidity</h4>
-       <h4>WindSpeed</h4>
-        <h4>Uv Index</h4>
+        <h1 id="cityName" class="display-4"></h1>
+       <h6 id="currentTemp"></h6> 
+       <h6 id="currentHumidity"></h6>
+       <h6 id="currentWindSpeed"></h6>
+       <h4 id="currentUVIndex"></h4>
       </div>
 
+
       <div class="container">
+        <h2>Five Day Forecast</h2>
+        <div class="row">
+
+        </div>
+      </div>
+
+      <!-- <div class="container">
       <div class="row">
           <div class="col-md-3">
       <div class="card" style="width: 18rem;">
@@ -35,57 +48,7 @@
           <h6 class="card-subtitle mb-2 text-muted">UV Index</h6>
       </div>
     </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Day 2</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Temperature</h6>
-          <h6 class="card-subtitle mb-2 text-muted">Humidity</h6>
-          <h6 class="card-subtitle mb-2 text-muted">WindSpeed</h6>
-          <h6 class="card-subtitle mb-2 text-muted">UV Index</h6>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Day 3</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Temperature</h6>
-          <h6 class="card-subtitle mb-2 text-muted">Humidity</h6>
-          <h6 class="card-subtitle mb-2 text-muted">WindSpeed</h6>
-          <h6 class="card-subtitle mb-2 text-muted">UV Index</h6>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-3">
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Day 4</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Temperature</h6>
-          <h6 class="card-subtitle mb-2 text-muted">Humidity</h6>
-          <h6 class="card-subtitle mb-2 text-muted">WindSpeed</h6>
-          <h6 class="card-subtitle mb-2 text-muted">UV</h6>
-         </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Day 5</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Temperature</h6>
-          <h6 class="card-subtitle mb-2 text-muted">Humidity</h6>
-          <h6 class="card-subtitle mb-2 text-muted">WindSpeed</h6>
-          <h6 class="card-subtitle mb-2 text-muted">UV Index</h6>
-        </div>
-      </div>
-      </div>
-    </div>
-    </div>
+    </div> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
