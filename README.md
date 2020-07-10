@@ -6,4 +6,4 @@ The user enters a city they want the weather to be displayed then the api of ope
 
 It will also display the weather for the next 5 days in another section on the screen
 
-website: https://tyhunt24.github.io/weather-dashboard/ 
+website: https://tyhunt24.github.io/weather-dashboard/ repo: https://github.com/tyhunt24/weather-dashboard
